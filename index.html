@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>The Code Review</title>
+</head>
+<body>
+   
+    <!-- HEADER-->
+    <header>
+        <h1>THE CODE REVIEW</h1> 
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+    
+    <form action="#" method="post">
+      <!-- CONTACT INFORMATION-->
+        <fieldset class="field">
+            <legend>Contact Information</legend>
+
+            <div class="inline">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="name" placeholder="Required" required class="input_width required_form">
+            </div>
+
+            <div class="inline">
+                <label for="email">Email Adress</label>
+                <input type="email" id="email" name="mail" placeholder="Required" required class="input_width required_form">
+            </div>
+
+            <div class="inline">
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="tel" class="input_width" placeholder="06-12345678">
+            </div>
+
+            <div class="inline">  
+                <label for="street">Street Address</label>
+                <input type="street" id="street" name="street" class="input_width" placeholder="King Street 1">
+            </div>     
+
+            <div class="inline">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" class="input_width" placeholder="Berg en Dal">
+            </div>
+
+            <div class="inline">
+                <label for="state">State</label>
+                <select id="state" name="state" class="input_width state">
+                    <option value="" disabled selected hidden>Choose State</option>
+                    <option value="HA">Hawaii</option>
+                    <option value="NY">New York</option>
+                    <option value="OR">Oregon</option>
+                    <option value="UT">Utah</option>
+                    <option value="WA">Washington</option>
+                 </select>   
+            </div>
+
+            <div class="inline">
+                <label for="zip">Zip Code</label>
+                <div class="zipcode">
+                    <input type="text" id="zip" name="zip" class="input_width zip" placeholder="1313 WC"> 
+                </div>
+            </div>
+        </fieldset>
+  
+
+        <!-- NEWSLETTER-->
+        <fieldset>
+            <legend>Newsletter</legend>
+            <p class="padding-left">Select the newsletter you would like to recieve</p>
+                
+            <!-- CHECKBOX-->
+            <div class="padding_bottom">
+                <div>
+                    <input type="checkbox" name="news" id="html" value="checkbox" checked class="checkbox_padding">
+                    <label for="html">HTML News</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="news" id="css" value="checkbox" class="checkbox_padding"> 
+                    <label for="css">CSS News</label>
+                </div>
+                <div>   
+                    <input type="checkbox" name="news" id="js" value="checkbox" class="checkbox_padding">
+                    <label for="js">Javascript News</label>
+                </div>
+            </div>
+                    <!-- RADIO BUTTONS-->
+                <p class="padding-left">Newsletter Format</p>
+                <div class="padding_bottom">
+                    <div>
+                        <input type="radio" name="newletter" id="html" checked class="checkbox_padding">
+                        <label for="html">HTML</label>   
+                    </div>
+            
+                    <div>
+                        <input type="radio" name="newletter" id="plain" class="checkbox_padding">
+                        <label for="plain">Plain text</label>   
+                    </div>
+                </div>
+        
+                    <!-- TEXTAREA-->
+                    <label for="textarea">Other topics you'd like to hear about</label>
+                    <textarea name="" id="textarea" cols="" rows="" class="input_width area"></textarea>
+                    
+                    <!-- SUBMIT BUTTON-->
+                    <input type="submit" value="Sign Up" class="submit_button">
+        
+        
+        </fieldset>        
+    </form>      
+                    <!-- FOOTER-->
+    
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>
